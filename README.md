@@ -9,7 +9,10 @@ Projeto com Feedback: Machine Learning em Logística Prevendo o Consumo de Energ
 Fonte de dados: https://data.mendeley.com/datasets/tb9yrptydn/2
 
 Resumo do Projeto:
-Criação de projeto de Machine Learning para segurança do trabalho “Prevendo a Eficiênciade Extintores de Incêndio” e com o objetivo da Classificação preditiva atingir 85% de acurácia.
-O projeto foi realizado de forma independente por 4 semanas para carregar, analisar,limpar, pré-processar, realizar a análises estatísticas e criar e avaliar os modelos de Machine Learning, utilizando linguagem R e seus pacotes readxl(para importar a fonte dedados em Excel), car(para geração de qqPlots), e1071(para analisar Assimetria e Curtose), caTools(para divisão em de dados em treino e teste), pROC(para visualizar, suavizar e comparar as características de curvas ROC) e multiROC(para calcular métricas deSpecificity, Sensitivity e AUC).
-Os algorítimos de Machine Learning utilizados neste projeto para criação dos modelos deRegressão foram: Regressão Logistica(Benchmark), KNN(2 versões), Naive Bayes(2versões) e SVM(2 versões).
-Na avaliação dos modelos verificou-se que o modelo KNN V1 teve a maioracurácia(0.9312) e o maior AUC(0.9311), sendo este o escolhido para deploy pois obteve melhor desempenho em 2 das 3 métricas analisadas.
+Realizado desenvolvimento do projeto de previsão de Consumo de Energia de Carros Elétricos, utilizando diversos modelos de veículos e com o objetivo de atingir uma precisãode 80% pelo modelo de Regressão.
+Este trabalho foi realizado de forma independente por 3 semanas para carregar, analisar,limpar, pré-processar, realizar a análise estatística e criar e avaliar os modelos de Machine Learning.
+Este projeto foi desenvolvido em linguagem R, utilizando as bibliotecas como readxl para carregar dados, dplyr para manipulação de data frames, ggplot2 para plot de gráficos e caret para criação dos modelos.
+Na modelagem preditiva de Regressão, foram utilizados os algoritmos RegressãoLinear(Benchmark), Radom Forest e SVM(2 versões). O Radom Forest também foi utilizado para Feature Selection.
+Foram construídas 4 versões de modelos preditivos usando diferentes abordagens.
+Na avaliação, o modelo que apresentou melhor performace foi o modelo de Benchmark(usando Regressão Linear) com Rsquared = 0.7945 e Residual standard error =0.1173 que praticamente atingiu métrica definida no início do projeto(80%).
+O Dataset utilizado no projeto foi obtido emhttps://data.mendeley.com/datasets/tb9yrptydn/2
